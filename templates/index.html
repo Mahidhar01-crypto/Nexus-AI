@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Nexus AI - Intelligent AI Platform">
+
+    <title>Nexus AI | Intelligent AI Platform</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+<!-- ======================================
+                LOADER
+======================================= -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+        </div>
+
+        <h1>Nexus AI</h1>
+
+        <p>
+
+            Initializing Artificial Intelligence...
+
+        </p>
+
+        <div class="loading-bar">
+
+            <div class="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+        Animated Background
+======================================= -->
+
+<div class="background">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<!-- ======================================
+                NAVBAR
+======================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-brain"></i>
+
+        <span>Nexus AI</span>
+
+    </div>
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="/">Home</a>
+            </li>
+
+            <li>
+                <a href="/chatbot">AI Chat</a>
+            </li>
+
+            <li>
+                <a href="/spam">Spam Detector</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#features">Features</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="menu-toggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+    <div class="nav-buttons">
+
+        <a href="/chatbot">
+
+            <button class="login-btn">
+
+                AI Chat
+
+            </button>
+
+        </a>
+
+        <a href="/spam">
+
+            <button class="signup-btn">
+
+                Get Started
+
+            </button>
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ======================================
+                HERO
+======================================= -->
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="tag">
+
+            🚀 AI Powered Platform
+
+        </span>
+
+        <h1>
+
+            Build Smarter With
+
+            <span>Nexus AI</span>
+
+        </h1>
+
+        <p>
+
+            One intelligent platform that combines
+            AI Chat, Spam Detection,
+            PDF Analysis, AI Writing,
+            Image Generation,
+            and many more powerful AI tools.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/chatbot">
+
+                <button class="primary-btn">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    AI Chat
+
+                </button>
+
+            </a>
+
+            <a href="/spam">
+
+                <button class="secondary-btn">
+
+                    <i class="fa-solid fa-shield"></i>
+
+                    Spam Detector
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="glass-card">
+
+            <i class="fa-solid fa-comments"></i>
+
+            <h3>AI Chat</h3>
+
+            <p>
+
+                Ask anything with Gemini AI.
+
+            </p>
+
+        </div>
+
+        <div class="glass-card">
+
+            <i class="fa-solid fa-envelope-open-text"></i>
+
+            <h3>Spam Detection</h3>
+
+            <p>
+
+                Detect spam from text, PDF,
+                DOCX and TXT.
+
+            </p>
+
+        </div>
+
+        <div class="glass-card">
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+            <h3>PDF Analysis</h3>
+
+            <p>
+
+                Extract and analyze document
+                content instantly.
+
+            </p>
+
+        </div>
+
+        <div class="glass-card">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h3>AI Services</h3>
+
+            <p>
+
+                Multiple AI solutions
+                under one platform.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ======================================
+            STATISTICS
+======================================= -->
+
+<section class="stats">
+
+    <div class="stat-box">
+
+        <h2>10K+</h2>
+
+        <p>Active Users</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>99.8%</h2>
+
+        <p>Accuracy</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>24/7</h2>
+
+        <p>AI Support</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>6+</h2>
+
+        <p>AI Services</p>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+            SERVICES
+======================================= -->
+
+<section class="services" id="services">
+
+    <div class="section-title">
+
+        <h2>
+
+            Our AI Services
+
+        </h2>
+
+        <p>
+
+            Powerful AI solutions that simplify your work,
+            improve productivity and deliver intelligent
+            results in seconds.
+
+        </p>
+
+    </div>
+
+    <div class="service-grid">
+
+        <!-- AI CHAT -->
+
+        <div class="service-card featured">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-robot"></i>
+
+            </div>
+
+            <h3>
+
+                AI Chat Assistant
+
+            </h3>
+
+            <p>
+
+                Interact with Gemini AI for intelligent,
+                human-like conversations.
+
+            </p>
+
+            <ul>
+
+                <li>✔ Smart Responses</li>
+
+                <li>✔ Code Generation</li>
+
+                <li>✔ AI Assistance</li>
+
+            </ul>
+
+            <a href="/chatbot">
+
+                <button>
+
+                    Open Chat
+
+                </button>
+
+            </a>
+
+        </div>
+
+        <!-- SPAM -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <h3>
+
+                Spam Detection
+
+            </h3>
+
+            <p>
+
+                Upload text, PDF, DOCX or TXT files and
+                instantly detect spam messages.
+
+            </p>
+
+            <ul>
+
+                <li>✔ Text Input</li>
+
+                <li>✔ PDF Upload</li>
+
+                <li>✔ DOCX Upload</li>
+
+                <li>✔ TXT Upload</li>
+
+            </ul>
+
+            <a href="/spam">
+
+                <button>
+
+                    Detect Spam
+
+                </button>
+
+            </a>
+
+        </div>
+
+        <!-- WRITER -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-pen-nib"></i>
+
+            </div>
+
+            <h3>
+
+                AI Writer
+
+            </h3>
+
+            <p>
+
+                Generate blogs,
+                emails,
+                captions,
+                reports,
+                and professional content.
+
+            </p>
+
+            <span class="coming">
+
+                Coming Soon
+
+            </span>
+
+        </div>
+
+        <!-- PDF -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+            <h3>
+
+                PDF Chat
+
+            </h3>
+
+            <p>
+
+                Upload documents
+                and ask questions
+                directly from your PDFs.
+
+            </p>
+
+            <span class="coming">
+
+                Coming Soon
+
+            </span>
+
+        </div>
+
+        <!-- IMAGE -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-image"></i>
+
+            </div>
+
+            <h3>
+
+                AI Image Generator
+
+            </h3>
+
+            <p>
+
+                Convert text prompts into
+                beautiful AI generated images.
+
+            </p>
+
+            <span class="coming">
+
+                Coming Soon
+
+            </span>
+
+        </div>
+
+        <!-- TRANSLATOR -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-language"></i>
+
+            </div>
+
+            <h3>
+
+                AI Translator
+
+            </h3>
+
+            <p>
+
+                Translate text
+                into multiple languages
+                with AI.
+
+            </p>
+
+            <span class="coming">
+
+                Coming Soon
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ======================================
+        WHY CHOOSE NEXUS AI
+======================================= -->
+
+<section class="features" id="features">
+
+    <div class="section-title">
+
+        <h2>
+
+            Why Choose Nexus AI?
+
+        </h2>
+
+        <p>
+
+            We combine powerful artificial intelligence with a
+            modern user experience to help you work faster,
+            smarter, and more efficiently.
+
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Lightning Fast</h3>
+
+            <p>
+
+                Generate responses and predictions
+                within seconds using optimized AI models.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <h3>Secure Platform</h3>
+
+            <p>
+
+                Your data remains secure and private with
+                modern security practices.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-microchip"></i>
+
+            <h3>AI Powered</h3>
+
+            <p>
+
+                Powered by Google's Gemini AI and Machine
+                Learning technologies.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-mobile-screen-button"></i>
+
+            <h3>Responsive</h3>
+
+            <p>
+
+                Fully optimized for desktop,
+                tablet and mobile devices.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <h3>Multiple AI Tools</h3>
+
+            <p>
+
+                Chatbot, Spam Detection,
+                PDF Analysis and many
+                upcoming AI services.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <h3>Cloud Based</h3>
+
+            <p>
+
+                Access Nexus AI from anywhere
+                without installing additional software.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+            HOW IT WORKS
+======================================= -->
+
+<section class="workflow">
+
+    <div class="section-title">
+
+        <h2>
+
+            How Nexus AI Works
+
+        </h2>
+
+        <p>
+
+            Three simple steps to start using
+            artificial intelligence.
+
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <h3>
+
+                Step 1
+
+            </h3>
+
+            <h4>
+
+                Select AI Tool
+
+            </h4>
+
+            <p>
+
+                Choose AI Chat,
+                Spam Detection,
+                or another AI service.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+
+                <i class="fa-solid fa-keyboard"></i>
+
+            </div>
+
+            <h3>
+
+                Step 2
+
+            </h3>
+
+            <h4>
+
+                Enter Your Request
+
+            </h4>
+
+            <p>
+
+                Type your message or upload
+                PDF, DOCX or TXT files.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+
+                <i class="fa-solid fa-brain"></i>
+
+            </div>
+
+            <h3>
+
+                Step 3
+
+            </h3>
+
+            <h4>
+
+                Get Instant Results
+
+            </h4>
+
+            <p>
+
+                AI processes your request
+                and delivers intelligent,
+                accurate results.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+            PLATFORM HIGHLIGHTS
+======================================= -->
+
+<section class="highlights">
+
+    <div class="highlight-left">
+
+        <h2>
+
+            One Platform.
+            Unlimited AI Possibilities.
+
+        </h2>
+
+        <p>
+
+            Instead of switching between
+            multiple AI websites,
+            Nexus AI provides everything
+            inside one modern platform.
+
+        </p>
+
+        <ul>
+
+            <li>
+                ✔ AI Chat Assistant
+            </li>
+
+            <li>
+                ✔ Spam Detection
+            </li>
+
+            <li>
+                ✔ PDF Analysis
+            </li>
+
+            <li>
+                ✔ AI Writer
+            </li>
+
+            <li>
+                ✔ AI Image Generator
+            </li>
+
+            <li>
+                ✔ Future AI Tools
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="highlight-right">
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-header">
+
+                <span class="dot red"></span>
+
+                <span class="dot yellow"></span>
+
+                <span class="dot green"></span>
+
+            </div>
+
+            <div class="dashboard-body">
+
+                <div class="dashboard-item">
+
+                    🤖 AI Chat
+
+                </div>
+
+                <div class="dashboard-item">
+
+                    📧 Spam Detector
+
+                </div>
+
+                <div class="dashboard-item">
+
+                    📄 PDF Chat
+
+                </div>
+
+                <div class="dashboard-item">
+
+                    ✍ AI Writer
+
+                </div>
+
+                <div class="dashboard-item">
+
+                    🎨 Image Generator
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ======================================
+            TESTIMONIALS
+======================================= -->
+
+<section class="testimonials">
+
+    <div class="section-title">
+
+        <h2>
+
+            What Our Users Say
+
+        </h2>
+
+        <p>
+
+            Trusted by students,
+            developers,
+            professionals,
+            and businesses.
+
+        </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="quote">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+            </div>
+
+            <p>
+
+                Nexus AI has become my daily AI assistant.
+                The chatbot is incredibly fast and the interface
+                is beautiful.
+
+            </p>
+
+            <div class="user">
+
+                <img src="{{ url_for('static', filename='images/user1.jpg') }}">
+
+                <div>
+
+                    <h4>Alex Johnson</h4>
+
+                    <span>Software Engineer</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="testimonial-card">
+
+            <div class="quote">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+            </div>
+
+            <p>
+
+                Spam Detection works perfectly.
+                Uploading PDFs is very convenient
+                and accurate.
+
+            </p>
+
+            <div class="user">
+
+                <img src="{{ url_for('static', filename='images/user2.jpg') }}">
+
+                <div>
+
+                    <h4>Sarah Wilson</h4>
+
+                    <span>Cyber Security Student</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="testimonial-card">
+
+            <div class="quote">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+            </div>
+
+            <p>
+
+                Everything is available in one place.
+                Looking forward to the AI Writer
+                and Image Generator.
+
+            </p>
+
+            <div class="user">
+
+                <img src="{{ url_for('static', filename='images/user3.jpg') }}">
+
+                <div>
+
+                    <h4>David Lee</h4>
+
+                    <span>UI Designer</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================
+            CALL TO ACTION
+======================================= -->
+
+<section class="cta">
+
+    <h2>
+
+        Ready to Experience AI?
+
+    </h2>
+
+    <p>
+
+        Join thousands of users using Nexus AI
+        to improve productivity with intelligent tools.
+
+    </p>
+
+    <div class="cta-buttons">
+
+        <a href="/chatbot">
+
+            <button class="primary-btn">
+
+                Start AI Chat
+
+            </button>
+
+        </a>
+
+        <a href="/spam">
+
+            <button class="secondary-btn">
+
+                Detect Spam
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================
+            CONTACT
+======================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>
+
+            Contact Nexus AI
+
+        </h2>
+
+        <p>
+
+            We'd love to hear from you.
+
+        </p>
+
+    </div>
+
+    <form class="contact-form">
+
+        <input
+            type="text"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <textarea
+            rows="6"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button
+            type="submit"
+            class="primary-btn">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- ======================================
+                FOOTER
+======================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-brain"></i>
+
+                <span>Nexus AI</span>
+
+            </div>
+
+            <p>
+
+                Intelligent AI solutions for
+                everyone.
+
+                Chatbot.
+
+                Spam Detection.
+
+                PDF Analysis.
+
+                Future AI Services.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <a href="/">Home</a>
+
+            <a href="/chatbot">AI Chat</a>
+
+            <a href="/spam">Spam Detection</a>
+
+            <a href="#features">Features</a>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h3>
+
+                AI Services
+
+            </h3>
+
+            <a href="/chatbot">
+
+                AI Chat
+
+            </a>
+
+            <a href="/spam">
+
+                Spam Detection
+
+            </a>
+
+            <a href="#">
+
+                AI Writer
+
+            </a>
+
+            <a href="#">
+
+                PDF Chat
+
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h3>
+
+                Follow Us
+
+            </h3>
+
+            <a href="#">
+
+                <i class="fab fa-github"></i>
+
+                GitHub
+
+            </a>
+
+            <a href="#">
+
+                <i class="fab fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+            <a href="#">
+
+                <i class="fab fa-twitter"></i>
+
+                Twitter
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        © 2026 Nexus AI
+
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================
+        JavaScript
+=========================== -->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

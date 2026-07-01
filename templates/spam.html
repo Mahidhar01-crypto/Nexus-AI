@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Spam Detection | Nexus AI</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/spam.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===========================
+            SIDEBAR
+=========================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <span>Nexus AI</span>
+
+    </div>
+
+    <a href="/" class="nav-btn">
+
+        <i class="fa-solid fa-house"></i>
+
+        Home
+
+    </a>
+
+    <a href="/chatbot" class="nav-btn">
+
+        <i class="fa-solid fa-robot"></i>
+
+        AI Chat
+
+    </a>
+
+    <a href="/spam" class="nav-btn active">
+
+        <i class="fa-solid fa-envelope-open-text"></i>
+
+        Spam Detector
+
+    </a>
+
+</aside>
+
+<!-- ===========================
+            MAIN
+=========================== -->
+
+<div class="main">
+
+<header>
+
+    <h1>
+
+        Spam Message Detection
+
+    </h1>
+
+    <p>
+
+        Analyze text messages or upload files.
+
+    </p>
+
+</header>
+
+<div class="card">
+
+<form id="spamForm">
+
+<h2>
+
+    Message Input
+
+</h2>
+
+<textarea
+
+id="message"
+
+placeholder="Paste your message here..."
+
+></textarea>
+
+<div class="divider">
+
+OR
+
+</div>
+
+<label class="upload">
+
+<input
+
+type="file"
+
+id="file"
+
+accept=".txt,.pdf,.docx"
+
+hidden>
+
+<i class="fa-solid fa-upload"></i>
+
+Choose PDF / DOCX / TXT
+
+</label>
+
+<button
+
+type="submit"
+
+id="detectBtn">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Detect Spam
+
+</button>
+
+</form>
+
+</div>
+<!-- ===========================
+            RESULT CARD
+=========================== -->
+
+<div class="result-card" id="resultCard">
+
+    <div class="result-icon">
+
+        <i class="fa-solid fa-shield-check"></i>
+
+    </div>
+    <h2 id="result"></h2>
+
+    <h2 id="prediction">
+
+        Waiting for Analysis...
+
+    </h2>
+
+    <p>
+
+        Confidence:
+
+        <span id="confidence">
+
+            0%
+
+        </span>
+
+    </p>
+
+    <div class="confidence-bar">
+
+        <div
+            id="confidenceFill"
+            class="confidence-fill">
+
+        </div>
+
+    </div>
+    <div class="risk">
+
+    Risk Level :
+
+    <span id="riskLevel">
+
+        -
+
+    </span>
+
+</div>
+
+    <div class="message-preview">
+
+        <h3>
+
+            Message Preview
+
+        </h3>
+
+        <p id="preview">
+
+            No message analyzed yet.
+
+        </p>
+
+    </div>
+
+</div>
+
+</div> <!-- End Main -->
+
+</div> <!-- End Container -->
+
+<!-- ===========================
+        JavaScript
+============================ -->
+
+<script src="{{ url_for('static', filename='js/spam.js') }}"></script>
+
+</body>
+
+</html>

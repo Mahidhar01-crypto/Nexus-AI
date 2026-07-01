@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found | Nexus AI</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+
+        body{
+
+            background:#050816;
+
+            color:white;
+
+            font-family:Inter,sans-serif;
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            height:100vh;
+
+            overflow:hidden;
+
+        }
+
+        .error-box{
+
+            text-align:center;
+
+            max-width:700px;
+
+            padding:50px;
+
+            background:rgba(255,255,255,.05);
+
+            border:1px solid rgba(255,255,255,.08);
+
+            backdrop-filter:blur(20px);
+
+            border-radius:25px;
+
+            box-shadow:0 20px 60px rgba(0,0,0,.4);
+
+        }
+
+        .error-box h1{
+
+            font-size:140px;
+
+            background:linear-gradient(135deg,#6C63FF,#00D4FF);
+
+            background-clip:text;
+
+            -webkit-background-clip:text;
+
+            -webkit-text-fill-color:transparent;
+
+            margin-bottom:10px;
+
+        }
+
+        .error-box h2{
+
+            font-size:36px;
+
+            margin-bottom:20px;
+
+        }
+
+        .error-box p{
+
+            color:#BFC9D4;
+
+            line-height:1.8;
+
+            margin-bottom:40px;
+
+        }
+
+        .home-btn{
+
+            display:inline-block;
+
+            padding:16px 35px;
+
+            border-radius:50px;
+
+            background:linear-gradient(135deg,#6C63FF,#00D4FF);
+
+            color:white;
+
+            text-decoration:none;
+
+            font-weight:600;
+
+            transition:.3s;
+
+        }
+
+        .home-btn:hover{
+
+            transform:translateY(-5px);
+
+            box-shadow:0 20px 40px rgba(0,212,255,.3);
+
+        }
+
+        .error-icon{
+
+            font-size:60px;
+
+            color:#00D4FF;
+
+            margin-bottom:20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="error-box">
+
+    <div class="error-icon">
+
+        <i class="fa-solid fa-triangle-exclamation"></i>
+
+    </div>
+
+    <h1>
+
+        404
+
+    </h1>
+
+    <h2>
+
+        Oops! Page Not Found
+
+    </h2>
+
+    <p>
+
+        The page you're looking for doesn't exist or may have been moved.
+        Return to the Nexus AI homepage to continue exploring our AI tools.
+
+    </p>
+
+    <a href="/" class="home-btn">
+
+        <i class="fa-solid fa-house"></i>
+
+        Back to Home
+
+    </a>
+
+</div>
+
+</body>
+
+</html>

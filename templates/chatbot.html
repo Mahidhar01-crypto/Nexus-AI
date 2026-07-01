@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexus AI Chat</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/chatbot.css') }}">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <!-- =======================================
+                    SIDEBAR
+    ======================================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>Nexus AI</span>
+
+        </div>
+
+        <button id="newChat" class="new-chat-btn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            New Chat
+
+        </button>
+
+        <div class="history">
+
+            <h3>Recent Chats</h3>
+
+            <ul id="historyList">
+
+                <li>Welcome to Nexus AI</li>
+
+            </ul>
+
+        </div>
+
+        <div class="sidebar-footer">
+
+            <a href="/">
+
+                <i class="fa-solid fa-house"></i>
+
+                Home
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- =======================================
+                    CHAT AREA
+    ======================================== -->
+
+    <main class="chat-main">
+
+        <!-- Header -->
+
+        <header class="chat-header">
+
+            <div>
+
+                <h2>Nexus AI Assistant</h2>
+
+                <span>Powered by Google Gemini</span>
+
+            </div>
+
+            <button id="clearButton" class="icon-btn">
+
+                <i class="fa-solid fa-trash"></i>
+
+            </button>
+
+        </header>
+
+        <!-- Chat Body -->
+
+        <div id="chatBody" class="chat-body">
+
+            <div class="bot-message">
+
+                <div class="avatar">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+                <div class="message">
+
+                    <div class="message-text">
+
+                        👋 Hello! I'm <b>Nexus AI</b>.<br><br>
+
+                        Ask me anything.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Typing Indicator -->
+
+        <div id="typingIndicator" class="typing-container">
+
+            <div class="avatar">
+
+                <i class="fa-solid fa-robot"></i>
+
+            </div>
+
+            <div class="typing">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+        <!-- Suggestions -->
+
+        <div class="suggestions">
+
+            <button class="suggestion">
+                Explain Python OOP
+            </button>
+
+            <button class="suggestion">
+                Build a Flask project
+            </button>
+
+            <button class="suggestion">
+                Explain Machine Learning
+            </button>
+
+            <button class="suggestion">
+                Write SQL Queries
+            </button>
+
+        </div>
+
+        <!-- Input Area -->
+
+        <div class="chat-input">
+
+            <div class="input-box">
+
+                <textarea
+
+                    id="userInput"
+
+                    rows="1"
+
+                    placeholder="Message Nexus AI..."
+
+                ></textarea>
+
+            </div>
+
+            <button
+
+                id="sendButton"
+
+                class="send-btn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+
+</body>
+
+</html>
